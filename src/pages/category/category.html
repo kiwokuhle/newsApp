@@ -1,0 +1,25 @@
+
+<ion-content padding>
+    <div class="card-background-page">
+
+        <ion-card>
+          <img id="trending" src={{img}} alt="Headline"/>
+          <div class="card-title">{{title}}</div>
+        </ion-card>
+    
+      </div>
+    
+      <ion-list>
+        
+          <ion-item class="items" *ngFor="let index of arr; let i = index" padding (click)="show(i)">
+            <ion-thumbnail item-start>
+              <img src="{{index.urlToImage}}">
+            </ion-thumbnail>
+            <h2>{{index.title}}...</h2>
+            <p>{{index.publishedAt | date: 'h:m dd/MMMM/yyyy'}}</p>
+    
+          </ion-item>
+        
+      </ion-list>
+
+</ion-content>

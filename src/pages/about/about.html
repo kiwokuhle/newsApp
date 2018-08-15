@@ -1,11 +1,87 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="cat">
     <ion-title>
-      About
+      CATEGORIES
+
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <div class="div">
+
+      <ion-card class="card" (click)="Category('top News')" >
+          <ion-card-content> 
+            <ion-icon name="ios-book"  md="md-book" ></ion-icon>
+            <ion-card-title>
+           Top News
+              </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+  
+  
+      <ion-card class="card" (click)="Category('Entertainment')">
+          <ion-card-content> 
+              <ion-icon name="ios-cash"  md="md-cash" ></ion-icon>
+              <ion-card-title>
+                  Entertainment
+                </ion-card-title>
+            </ion-card-content>
+      </ion-card>
+  
+      <ion-card class="card" (click)="Category('Sport')">
+          <ion-card-content> 
+              <ion-icon name="ios-tennisball"  md="md-tennisball" ></ion-icon>
+              <ion-card-title>
+                  Sport
+                </ion-card-title>
+            </ion-card-content>
+      </ion-card>
+  
+      <ion-card class="card" (click)="Category('Travel')">
+          <ion-card-content> 
+              <ion-icon name="ios-jet"  md="md-jet" ></ion-icon>
+              <ion-card-title>
+                  Travel
+                </ion-card-title>
+            </ion-card-content>
+      </ion-card>
+     <ion-card>
+      <ion-card-content class="card" (click)="Category('World')" > 
+          <ion-icon name="ios-globe"  md="md-globe" ></ion-icon>
+          <ion-card-title>
+           World
+            </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card"  (click)="Category('Business')">
+          <ion-card-content> 
+              <ion-icon name="ios-restaurant"  md="md-restaurant" ></ion-icon>
+              <ion-card-title>
+                  Business
+                </ion-card-title>
+            </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card"  (click)="Category('Health')">
+          <ion-card-content> 
+              <ion-icon name="ios-medkit"  md="md-medkit" ></ion-icon>
+              <ion-card-title>
+                  Health
+                </ion-card-title>
+            </ion-card-content>
+      </ion-card>
+      <ion-card class="card"  (click)="Category('  Food')">
+          <ion-card-content> 
+              <ion-icon name="ios-restaurant"  md="md-restaurant" ></ion-icon>
+              <ion-card-title>
+               Food
+                </ion-card-title>
+            </ion-card-content>
+      </ion-card>
+    </div>
+  
+  
 
 </ion-content>
